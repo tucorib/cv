@@ -1,0 +1,95 @@
+% Style classic en bleu
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[purple]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+\usepackage{hyperref}
+
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.5cm}
+
+\firstname{Nicolas}
+\familyname{Ribeiro}
+\title{Data scientist, Computer scientist\newline \large{Ingénieur confirmé (9
+ans d'expérience)}\newline \textcolor{white}{Keywords: NLP, IR}}
+\address{52 Rue de la Gravette}{31300 Toulouse}    
+\email{nicolas.ribeiro.qc.ca@gmail.com}                      
+\mobile{\href{tel:+33618748298}{+33 6 18 74 82 98}} 
+
+% Custom commands
+\newcommand*{\cvdoublelistitem}[4][.25em]{%
+\cvitem[#1]{#2}{\listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#3\end{minipage}%
+  \hfill% fill of \separatorcolumnwidth
+  \ifthenelse{\equal{#2}{}}%
+    {}%
+    {\listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#4\end{minipage}}}}
+
+\begin{document}
+\hypersetup{pdfauthor={Nicolas Ribeiro},%
+            pdfsubject={Data scientist, Computer scientist},%
+            pdftitle={Nicolas Ribeiro - CV},%
+            pdfkeywords={NLP, IR, Data scientist, Computer scientist},%
+            pdfproducer={LaTeX},%
+            pdfcreator={pdfLaTeX}
+}
+
+\maketitle
+
+\section{\textbf{Atouts industriels}}
+\cvitem{Linguistique}{Etude de problématiques linguistiques}
+\cvitem{Informatique}{Conception et développement de solutions informatiques
+\textit{backend}}
+\cvitem{Mathématiques}{Maîtrise d'outils mathématiques tels que l'analyse
+fonctionnelle et les statistiques}
+
+\section{\textbf{Compétences techniques}}
+\cvitem{Programmation}{Java, Python, SQL (> 15 langages déjà utilisés)}
+\cvitem{NLP}{IR, Topic modeling, POS tagging, expressions régulières}
+\cvitem{Big data}{Deep learning, Machine learning}
+% \cvitem{Outils}{Git, Basecamp, Eclipse}
+% \cvitem{Rédaction}{\LaTeX, suite Office}
+\cvitem{Systèmes}{Unix, Windows}
+
+\section{\textbf{Aptitudes personnelles}}
+\cvdoublelistitem{Langues}{Anglais: Courant\newline \small{TOEIC 2008:
+895/990}}{Espagnol: Occasionnel\newline \small{DCL 2014: B1}}
+\cvdoublelistitem{Travail}{Collaboration\newline \small{Travail en équipe: 7
+ans}}{Autonomie\newline \small{Télétravail: 3 ans}}
+
+\section{\textbf{Formations disciplinaires}}
+\cvitem{2012 -- 2014}{Formation de linguiste en NLP, \textit{Université
+Toulouse - Jean Jaurès}, Toulouse\newline \small{Master ECIL, recherche en
+traitement automatique du langage}}
+\cvitem{2010 --
+2012}{Etudes de lettres modernes, \textit{Université de Nantes}, Nantes\newline
+\small{Licence de Lettres Modernes, initiation à la linguistique}}
+\cvitem{2005 -- 2008}{Formation d'ingénieur en
+informatique, \textit{ENSEEIHT}, Toulouse\newline \small{Diplôme d'Ingénieur en
+Informatique et Mathématiques Appliquées}}
+\cvitem{2003 -- 2005}{Préparation à
+l'entrée aux Grandes Ecoles, \textit{Lycée Jean Dautet}, Toulouse\newline \small{Classes Préparatoires aux Grandes Ecoles,
+spécialité mathématiques}}
+
+\section{\textbf{Evolution professionnelle}}
+\cvitem{2012 -- 2017}{Ingénieur confirmé (NLP), \textit{Safety Data -
+CFH}, Toulouse\newline \small{Conception et développement d'une application web
+d'analyse automatique de rapports d'incidents.}}
+\cvitem{2010 -- 2012}{Ingénieur auto-entrepreneur (informatique), Nantes\newline
+\small{Conception et développement d'applications pour smartphones
+Android.\newline (chaine de cinémas, agences immobilières, garages
+automobiles)}} \cvitem{2008 -- 2010}{Ingénieur débutant
+(informatique), \textit{Atos Origin}, Toulouse\newline \small{Développement
+de logiciels de gestion pour le compte d'entreprises externes.\newline
+(financement de projets aéronautiques, conception d'assemblage automobile)}}
+
+\section{\textbf{Projets personnels}}
+\cvitem{Analyse de publications}{Développement d'un outil d'analyse sémantique
+et temporelle de publications.\newline \small{Corpus: articles journalistiques,
+posts de réseaux sociaux}}
+\cvitem{Générateur de journal}{Développement d'un outil
+d'aggrégation de publications.\newline \small{Corpus: articles journalistiques,
+posts de réseaux sociaux}}
+
+\end{document}
+
