@@ -1,0 +1,95 @@
+% Style classic en bleu
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[purple]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+\usepackage{hyperref}
+
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.5cm}
+
+\firstname{Nicolas}
+\familyname{Ribeiro}
+\title{Data scientist, Computer scientist\newline \large{Confirmed engineer (9
+year’s experience)}\newline \textcolor{white}{Keywords: NLP, IR}}
+\address{52 Rue de la Gravette}{31300 Toulouse, France}    
+\email{nicolas.ribeiro.qc.ca@gmail.com}                      
+\mobile{\href{tel:+33618748298}{+33 6 18 74 82 98}} 
+
+% Custom commands
+\newcommand*{\cvdoublelistitem}[4][.25em]{%
+\cvitem[#1]{#2}{\listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#3\end{minipage}%
+  \hfill% fill of \separatorcolumnwidth
+  \ifthenelse{\equal{#2}{}}%
+    {}%
+    {\listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#4\end{minipage}}}}
+
+\begin{document}
+\hypersetup{pdfauthor={Nicolas Ribeiro},%
+            pdfsubject={Data scientist, Computer scientist},%
+            pdftitle={Nicolas Ribeiro - CV},%
+            pdfkeywords={NLP, IR, Data scientist, Computer scientist},%
+            pdfproducer={LaTeX},%
+            pdfcreator={pdfLaTeX}
+}
+
+\maketitle
+\vspace*{-5mm}
+
+\section{\textbf{Industrial assets}}
+\cvitem{Linguistics}{Study of linguistic issues}
+\cvitem{Computer science}{Design and development of IT backend solutions}
+\cvitem{Mathematics}{Mastery of mathematical tools such as functional analysis and statistics}
+
+\section{\textbf{Technical skills}}
+\cvitem{Programming}{Java, Python, SQL (> 15 languages ​​already used)}
+\cvitem{NLP}{IR, Topic modeling, POS tagging, regular expressions}
+\cvitem{Big data}{Deep learning, Machine learning}
+% \cvitem{Tools}{Git, Basecamp, Eclipse}
+% \cvitem{Redaction}{\LaTeX, suite Office}
+\cvitem{OS}{Unix, Windows}
+
+\section{\textbf{Personal skills}}
+\cvdoublelistitem{Languages}
+{French: Mother Tongue}
+{English: Fluent}
+\cvdoublelistitem{}
+{Spanish: Upper intermediate}{}
+\cvdoublelistitem{Work}{Collaboration\newline \small{Team working: 7
+years}}{Autonomy\newline \small{Telecommuting: 3 years}}
+
+\section{\textbf{Education}}
+\cvitem{2012 -- 2014}{NLP course, \textit{Université
+Toulouse - Jean Jaurès}, Toulouse, France\newline \small{Master ECIL, research
+in NLP}} \cvitem{2010 --
+2012}{Modern litterature course, \textit{Université de Nantes}, Nantes,
+France\newline
+\small{Licence de Lettres Modernes, linguistics initiation}}
+\cvitem{2005 -- 2008}{Computer science engineer course, \textit{ENSEEIHT},
+Toulouse, France\newline
+\small{Diplôme d'Ingénieur en Informatique et Mathématiques Appliquées}}
+\cvitem{2003 -- 2005}{Engineer school preparation, \textit{Lycée Jean Dautet},
+La Rochelle, France\newline
+\small{Classes Préparatoires aux Grandes Ecoles, specialty in mathematics}}
+
+\section{\textbf{Professional evolution}}
+\cvitem{2012 -- 2017}{Confirmed engineer (NLP), \textit{Safety Data -
+CFH}, Toulouse, France\newline \small{Design and development of a
+web application for automatic analysis of incident reports.}}
+\cvitem{2010 -- 2012}{Freelance engineer (computer science), Nantes,
+France\newline \small{Design and development of applications for
+Android smartphones.\newline (cinemas, real estate agencies, car workshops)}}
+\cvitem{2008 -- 2010}{Beginner engineer
+(computer science), \textit{Atos Origin}, Toulouse, France\newline
+\small{Development of management software for external companies.\newline
+(financing of aeronautical projects, automotive assembly design)}}
+
+\section{\textbf{Personnal interests}}
+\cvitem{Analysis of publications}{Tool development for semantic and temporal
+analysis of publications.\newline \small{Corpus: journalistic articles, social networking posts}}
+\cvitem{Newspaper generator}{Tool development for aggregation of
+publications.\newline \small{Corpus: journalistic articles, social networking posts}}
+
+\end{document}
+
