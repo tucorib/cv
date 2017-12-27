@@ -1,0 +1,116 @@
+% Style classic en bleu
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[purple]{classic}
+\usepackage[utf8x]{inputenc} 
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.5cm}
+
+\firstname{Nicolas}
+\familyname{Ribeiro}
+\title{Data scientist, Computer scientist\newline \large{Confirmed engineer (9
+years of experience)}\newline \textcolor{white}{Keywords: NLP, IR}}
+\address{52 Rue de la Gravette}{31300 Toulouse, France}    
+\email{nicolas.ribeiro.qc.ca@gmail.com}                      
+\mobile{\href{tel:+33618748298}{+33 6 18 74 82 98}} 
+
+% Custom commands
+\newcommand*{\cvdoublelistitem}[4][.25em]{%
+\cvitem[#1]{#2}{\listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#3\end{minipage}%
+  \hfill% fill of \separatorcolumnwidth
+  \ifthenelse{\equal{#4}{}}%
+    {}%
+    {\listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#4\end{minipage}}}}
+ 
+\newcommand*{\cvfourlistitem}[6][.25em]{%
+\cvitem[#1]{#2}{
+\listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#3\end{minipage}%
+  \hfill% fill of \separatorcolumnwidth
+  \ifthenelse{\equal{#4}{}}%
+    {}%
+    {\listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#4\end{minipage}}
+    \newline
+    \listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#5\end{minipage}%
+  \hfill% fill of \separatorcolumnwidth
+  \ifthenelse{\equal{#2}{}}%
+    {}%
+    {\ifthenelse{\equal{#6}{}}{}
+                \listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#6\end{minipage}}
+               }}
+    
+    
+\begin{document}
+
+\hypersetup{pdfauthor={Nicolas Ribeiro},%
+            pdfsubject={Data scientist, Computer scientist},%
+            pdftitle={Nicolas Ribeiro - CV},%
+            pdfkeywords={NLP, IR, Data scientist, Computer scientist},%
+            pdfproducer={LaTeX},%
+            pdfcreator={pdfLaTeX}
+}
+
+\maketitle
+\vspace*{-10mm}
+
+\section{\textbf{Industry related skills}}
+\cvitem{Linguistics}{Study of linguistic issues}
+\cvitem{Informatics}{Design and development of IT backend solutions}
+\cvitem{Mathematics}{Proficiency in using mathematical tools such as functional
+analysis and statistics}
+
+\section{\textbf{Technical skills}}
+\cvitem{Programming}{Java, Python, SQL (> 15 languages ​​already used)}
+\cvitem{NLP}{IR, Topic modeling, POS tagging, regular expressions}
+\cvitem{Big data}{Deep learning, Machine learning}
+% \cvitem{Tools}{Git, Basecamp, Eclipse}
+% \cvitem{Redaction}{\LaTeX, suite Office}
+\cvitem{OS}{Unix, Windows}
+
+\section{\textbf{Personal skills}}
+\cvfourlistitem{Spoken languages}
+{French: Mother Tongue}
+{English: Fluent}
+{Spanish: Upper intermediate level}
+{}
+\cvdoublelistitem{Work}{Co-operative\newline \small{7
+years of teamwork}}{Autonomous\newline \small{3 years of telework}}
+
+\section{\textbf{Education}}
+\cvitem{2012 -- 2014}{NLP training, \textit{Université
+Toulouse - Jean Jaurès}, Toulouse, France\newline \small{Research-based master's
+degree in NLP}}
+\cvitem{2010 --
+2012}{Modern litterature training, \textit{Université de Nantes},
+Nantes, France\newline
+\small{Bachelor degree in modern litterature, linguistics initiation}}
+\cvitem{2005 -- 2008}{Informatics engineering training, \textit{ENSEEIHT},
+Toulouse, France\newline
+\small{National engineering diploma in informatics and applied
+mathetics\newline6 months abroad internship, Montréal, Canada}} \cvitem{2003 -- 2005}{Undergraduate engineering school, \textit{Lycée
+Jean Dautet}, La Rochelle, France\newline
+\small{Training classes primarily focused on mathematics}}
+
+\section{\textbf{Career progression}}
+\cvitem{2012 -- 2017}{Confirmed engineer (NLP), \textit{Safety Data -
+CFH}, Toulouse, France\newline \small{Design and development of a
+web application for automatic analysis of incident reports.}}
+\cvitem{2010 -- 2012}{Freelance engineer (informatics), Nantes,
+France\newline \small{Design and development of applications for
+Android smartphones.\newline (cinema companies, real estate agencies, car
+dealerships)}} \cvitem{2008 -- 2010}{Junior engineer
+(informatics), \textit{Atos Origin}, Toulouse, France\newline
+\small{Development of management softwares for external clients.\newline
+(aeronautical projects-financial fundings, automotive assembly lines
+programming)}}
+
+\section{\textbf{Personnal projects}}
+\cvitem{Analysis of published documents}{Semantic and temporal
+analysis tool development for published documents.\newline \small{Corpus:
+journalistic articles, social network posts}}
+\cvitem{Newspaper generator}{Aggregation tool development for
+published documents.\newline \small{Corpus: journalistic articles, social network posts}}
+
+\end{document}
+
