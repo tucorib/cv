@@ -1,0 +1,87 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1cm, bottom=1cm, left=1cm, right=1cm]{geometry}
+\usepackage[none]{hyphenat}
+
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{3cm}
+% Largeur de la séparation de colonnes
+\setlength{\separatorcolumnwidth}{0.75cm}
+
+% Header
+\firstname{Nicolas}
+\familyname{Ribeiro}
+\title{Enseignant en mathématiques}
+\address{136 Rue des Fontaines}{31300 Toulouse}    
+\email{nicolas.ribeiro.qc.ca@gmail.com}                      
+\mobile{\href{tel:+33618748298}{06 18 74 82 98}} 
+\extrainfo{Permis B}
+
+% Custom commands
+\newcommand*{\cvdoublelistitem}[4][.25em]{%
+\cvitem[#1]{#2}{\listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#3\end{minipage}%
+  \hfill% fill of \separatorcolumnwidth
+  \ifthenelse{\equal{#4}{}}%
+    {}%
+    {\listitemsymbol\begin{minipage}[t]{\listdoubleitemcolumnwidth}#4\end{minipage}}}}
+
+\begin{document}
+
+% Metadata
+\hypersetup{pdfauthor={Nicolas Ribeiro},%
+            pdfsubject={Enseignant en mathématiques},%
+            pdftitle={Nicolas Ribeiro - CV},%
+            pdfkeywords={enseignant, teacher, mathématiques, mathematics},%
+            pdfproducer={LaTeX},%
+            pdfcreator={pdfLaTeX}
+}
+
+% Title
+\maketitle
+
+\section{\textbf{Aptitudes personnelles}}
+\cvdoublelistitem{Pédagogie}{\textbf{Applicabilité}\newline Illustration des notions enseignées.\newline Lien avec les autres disciplines.}{\textbf{Adaptabilité}\newline Prise en compte des connaissances tierces des apprenants lors de l'enseignement.}
+\cvdoublelistitem{}{\textbf{Responsabilité}\newline Encouragement des prises d'initiatives.}{\textbf{Rigueur}\newline Evaluation compréhension/présentation.}
+\cvdoublelistitem{Parler en public}{\textbf{Présentation et clareté}\newline Echange interactif avec les apprenants.}{\textbf{Ecoute et respect}\newline entre enseignant et apprenants.}
+\cvdoublelistitem{Mathématiques}{\textbf{Rang CCP:} 1227\newline MPSI 2005}{\textbf{Rang CPGE:} 1\newline Moyennes maths.: 17/20, 16/20}
+\cvdoublelistitem{Informatique}{\textbf{Programmation:} Python}{\textbf{Rédaction:} \LaTeX}
+%\cvdoublelistitem{Travail}{\textbf{Autonomie}\newline \small{Télétravail: 3 ans}}{\textbf{Collaboration}\newline \small{Travail en équipe: 7 ans}}
+\cvdoublelistitem{Langues}{\textbf{Anglais:} Courant\newline \small{TOEIC 2008:
+895/990}}{\textbf{Espagnol:} Occasionnel\newline \small{DCL 2014: B1}}
+
+\section{\textbf{Expériences dans l'enseignement}}
+\cventry{2019}{Enseignant à domicile et aide aux devoirs}{}{Toulouse}{}{Programme de mathématiques et de physique-chimie de $6^{e}$ et $2^{e}$. 2 apprenants.}
+\cventry{2010 -- 2012}{Enseignant à domicile et aide aux devoirs}{}{Nantes}{}{Programme de mathématiques et de physique-chimie de $6^{e}$, $5^{e}$ et $2^{e}$. 4 apprenants.}
+
+\section{\textbf{Evolution professionnelle}}
+\cventry{2012 -- 2018}{Ingénieur confirmé (informatique, NLP)}{Safety Data -
+CFH}{Toulouse}{}{Conception et développement d'une application web
+d'analyse automatique de rapports d'incidents.}
+\cventry{2010 -- 2012}{Ingénieur auto-entrepreneur (informatique)}{}{Nantes}{}{Conception et développement d'applications pour smartphones
+Android.\newline (chaine de cinémas, agences immobilières, garages
+automobiles)}
+\cventry{2008 -- 2010}{Ingénieur débutant
+(informatique)}{Atos Origin}{Toulouse}{}{Développement
+de logiciels de gestion pour le compte d'entreprises externes.\newline
+(financement de projets aéronautiques, conception d'assemblage automobile)}
+
+\section{\textbf{Formations disciplinaires}}
+\cventry{2012 -- 2014}{Formation de linguiste en NLP}{Université
+Toulouse - Jean Jaurès}{Toulouse}{}{Master ECIL, recherche en
+traitement automatique du langage.}
+\cventry{2010 --
+2012}{Etudes de lettres modernes}{Université de Nantes}{Nantes}{}{Licence de Lettres Modernes, initiation à la linguistique.}
+\cventry{2005 -- 2008}{Formation d'ingénieur en
+informatique}{ENSEEIHT}{Toulouse}{}{Diplôme d'Ingénieur en
+Informatique et Mathématiques Appliquées.}
+\cventry{2003 -- 2005}{Préparation à
+l'entrée aux Grandes Ecoles}{Lycée Jean Dautet}{La Rochelle}{}{Classes Préparatoires aux Grandes Ecoles, spécialité mathématiques.}
+
+\section{\textbf{Activités extérieures}}
+\cvdoublelistitem{}{\textbf{Théâtre d'improvisation.}\newline 3 ans.}{\textbf{Musique}\newline Guitare, harmonica.}
+\cvdoublelistitem{}{\textbf{Informatique}\newline Développement d'outils personnels.}{\textbf{Jeux}\newline Jeux de société, jeux vidéos.}
+%\end{multicols}
+
+\end{document}
+

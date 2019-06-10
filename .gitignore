@@ -1,0 +1,7 @@
+# Latex
+tmp/
+build/
+
+# Eclipse
+*.project
+*.texlipse
